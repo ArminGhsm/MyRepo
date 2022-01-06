@@ -93,12 +93,26 @@ main > .area-content
     grid-template-areas: 
     "first first";
 }
+.works-content > a.link-1 {
+    background: url(aa.jpeg)  0 0 no-repeat;
+}
+.works-content > a.link-2 {
+    background: url(aa.jpeg)  0 0 no-repeat;
+}
+.works-content > a.link-3 {
+    background: url(aa.jpeg)  0 0 no-repeat;
+}
+.works-content > a.link-4 {
+    background: url(aa.jpeg)  0 0 no-repeat;
+}
+.works-content > a.link-5 {
+    background: url(aa.jpeg)  0 0 no-repeat;
+}
 .works-content > a {
     min-height: 10rem;
     display: flex;
     align-items: flex-end;
     padding-bottom: 1rem;
-    background: url(aa.jpeg)  0 0 no-repeat;
     background-size: cover;
     color: #000;
     text-decoration: none;
