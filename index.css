@@ -84,6 +84,12 @@ main > .area-content
     justify-items: center;
     align-items: center;
 }
+.contact-content a {
+    text-decoration: none;
+}
+.contact-content a:hover {
+    text-decoration: underline;
+}
 .works-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -91,16 +97,17 @@ main > .area-content
     align-items: stretch;
     gap: 0.5rem 0.5rem;
     grid-template-areas: 
-    "first first";
+    "first first" 
+    "first2 first2";
 }
 .works-content > a.link-1 {
-    background: url(aa.jpeg)  0 0 no-repeat;
+    background: url(brew.png)  0 0 no-repeat;
 }
 .works-content > a.link-2 {
-    background: url(aa.jpeg)  0 0 no-repeat;
+    background: url(quiz.png)  0 0 no-repeat;
 }
 .works-content > a.link-3 {
-    background: url(aa.jpeg)  0 0 no-repeat;
+    background: url(weather.png)  0 0 no-repeat;
 }
 .works-content > a.link-4 {
     background: url(aa.jpeg)  0 0 no-repeat;
@@ -108,7 +115,7 @@ main > .area-content
 .works-content > a.link-5 {
     background: url(aa.jpeg)  0 0 no-repeat;
 }
-.works-content > a {
+.works-content > a.mainlink {
     min-height: 10rem;
     display: flex;
     align-items: flex-end;
@@ -116,19 +123,45 @@ main > .area-content
     background-size: cover;
     color: #000;
     text-decoration: none;
-    opacity: 0.75;
+    opacity: 0.6;
     transition: opacity 0.5s;
 }
-.works-content > a:hover {
+.works-content > a.mainlink:hover {
     opacity: 1;
 }
-.works-content > a > div {
+.works-content > a.mainlink > div {
     background-color: rgba(0, 255, 255, 0.8);
     padding: 1rem;
 }
-.works-content > a > div > h4 {
+.works-content > a.mainlink > div > h4 {
     margin: 0;
+    margin-bottom: 0.5rem;
 }
 .works-first {
     grid-area: first;
+}
+.works-first2 {
+    grid-area: first2;
+}
+
+.works-content > a.guthub-link {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+    text-decoration: none;
+    border-bottom: solid rgb(5, 1, 43) 0.2rem;
+}
+.resume-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.resume-content a {
+    text-decoration: none;
+}
+.resume-content a:hover {
+    text-decoration: underline;
 }
